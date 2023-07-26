@@ -1,0 +1,12 @@
+// "@reduxjs/toolkit": "^1.9.5",
+// "axios": "^1.4.0",
+// "icons": "^1.0.0",
+// "react": "^18.2.0",
+// "react-dom": "^18.2.0",
+// "react-icons": "^4.10.1",
+// "react-redux": "^8.1.1",
+// "react-router-dom": "^6.14.1",
+// "react-switch": "^7.0.0",
+// "react-use-cart": "^1.13.0",
+// "redux-persist": "^6.0.0",
+// // "sweet-alert":

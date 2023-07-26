@@ -1,0 +1,42 @@
+
+ /* small screen */
+
+
+ .features{
+    background-color: forestgreen;
+ }
+
+ @media screen  and (min-width: 576px) {
+     .features{
+        background-color: blueviolet;
+     }
+ }
+ @media screen  and (min-width: 768px) {
+     .features{
+        background-color: gold;
+     }
+ }
+ @media screen  and (min-width: 992px) {
+     .features{
+        background-color: firebrick;
+     }
+ }
+ 
+ @media screen  and (max-height: 992px) and (min-aspect-ratio:7/4) {
+     .features{
+        background-color: rebeccapurple;    
+     }
+     h1 {
+        font-size: 18px;
+     }
+ }
+ 
+
+
+
+
+ .features{
+    font-size: 30px;
+ }
+
+ 

@@ -1,0 +1,876 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* height: 100vh; */
+    background-image: url(./assets/mine.jpg);
+    background-color: #2C3333;
+}
+
+.container {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+ .bigheader{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 99999999;
+    /* background-color: yellow; */
+ }
+
+
+.header {
+    height: 5vh;
+    width: 100%;
+    background-color: #2B4865;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-weight: 1000;
+    color: white;
+    /* position: sticky;
+    top: 0px; */
+}
+
+.header2 {
+    height: 6vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px  ;
+}
+
+.header2wrap {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+
+.logowrap {
+   width: 13%;
+    height: 100%;
+    display: flex;
+    font-size: 20px;
+    font-family: monospace;
+    gap: 2px;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.logowrap img {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.aboutwrap {
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: monospace;
+    font-size: 16px; 
+    color: black;  
+    gap: 10px;
+}
+
+a.active{ 
+    color: red;
+}
+
+
+.buttonwrap {
+    /* width: 20%; */
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.login {
+    width: 60%;
+    height: 70%;
+    /* background-color: white; */
+    border: 1px solid black;
+    color: blue;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 250ms ease-in;
+}
+
+.login:hover {
+    transform: scale(1.2);
+    background-color: green;
+    color: white;
+}
+
+.signup {
+    width: 50%;
+    height: 70%;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+.signup:hover {
+    transform: scale(1.2);
+    background-color: green;
+    color: white;
+}
+
+.thirdhead {
+    width: 100%;
+    height: 3vh;
+    background-color: white;
+    font-size: 16px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+.thirdheadwrap {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cartdiv {
+    width: 100%;
+    height: 3vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartdivwrap {
+    /* width: 80%; */
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+}
+
+.cartleft {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: monospace;
+    gap: 40px;
+}
+
+.cartright {
+    /* width: 50%; */
+    height: 100%;
+    background-color: white;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.categorydiv {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.categorywrap {
+    width: 80%;
+    height: 100%;
+    /* background-color: red; */
+    /* font-size: 15px; */
+    font-family: monospace;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* gap: 35px; */
+}
+
+.inputcategory {
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-family: monospace;
+    padding-left: 15px;
+    border: 1px solid black;
+    margin-left: 50px;
+}
+
+.search {
+    width: 70px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid black;
+    color: blue;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 350ms ease-in;
+    margin-left: 50px;
+}
+
+.search:hover {
+    transform: scale(1.2);
+}
+
+.slider {
+    width: 100%;
+    height: 80vh;
+    background-color: #2C3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    color: white;
+    /* background-image: url(./assets/How-to-make-GIF-from-a-Video-to-promote-your-Business.gif); */
+    /* background-image: url(./assets/slider1.jpg) */
+}
+
+.sliderwrap {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.sliderleft {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.slidetext{
+    width: 100%;
+    height: 70%;
+}
+
+.slidetext h3 {
+    font-size: 18px;
+    font-family: monospace;
+    height: 30%;
+}
+
+.shopnow {
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-family: monospace;
+    cursor: pointer;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+}
+
+
+
+.sliderright {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderright img {
+    width: 70%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+
+.iconslide {
+    width: 4%;
+    height: 90%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.leftarrow {
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.rightarrow {
+    width: 100%;
+    height: 8%;
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+}
+
+.menu{
+    display: none;
+}
+
+.menuitems{
+    width: 100%;
+    height: 30vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+    top: 60px;
+}
+
+.menuContents{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 20px;
+    font-size: 15px;
+}
+
+@media screen and(min-width: 576px) {
+    .slider{
+        background-color: green;
+    }
+
+    
+}
+
+/* @media screen and (width <= 425px) {
+   .header {
+      display: none;
+    }
+    .menu{
+        display: block;
+    }
+} */
+
+
+
+.bodypart {
+    width: 100%;
+    height: max-content;
+    /* background-image: url(./assets/How-to-make-GIF-from-a-Video-to-promote-your-Business.gif); */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-top: 10px; */
+    /* flex-direction: column; */
+
+}
+
+.bodypartwrap {
+    width: 80%;
+    height: max-content;
+    background-color: inherit;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.card {
+    width: 300px;
+    height: 480px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    transform: scale(1);
+    transition: all 350ms ease-in;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cardimage {
+    width: 100%;
+    height: 60%;
+    background-color: green;
+}
+
+.cardtext {
+    width: 100%;
+    height:35%;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.ViewBtn {
+    width: 60px;
+    height: 40px;
+    font-size: 19px;
+    font-family: monospace;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0px;
+    top: 55px;
+    right: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup {
+    width: 100%;
+    height: 110vh;
+    background-color: rgba(0, 0, 0, 0.701);
+    position: fixed;
+    top: 0;
+    backdrop-filter: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.popwrap {
+    width: 60%;
+    height: 60%;
+    background-color: green;
+    display: flex;
+}
+
+.popimage {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
+.popimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.poptext {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.deleteBtn {
+    width: 100%;
+    height: 5%;
+    color: red;
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+}
+
+.deleteBtn p {
+    font-size: 27px;
+    font-family: monospace;
+    transform: scale(1);
+    transition: all 350ms ease-in;
+    cursor: pointer;
+}
+
+.deleteBtn p:hover {
+    transform: scale(1.2);
+    color: red;
+}
+
+.poptext h3 {
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.poptext h5 {
+    font-size: 16px;
+    font-family: monospace;
+    margin-top: 50px;
+}
+
+.popupBtn {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 140px;
+}
+
+.Addtocart {
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 700;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.Viewcart {
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.loading {
+    font-size: 50px;
+}
+
+.backtotop {
+    width: 100%;
+    height: 10vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backBTN {
+    width: 15%;
+    height: 50%;
+    border: 1px solid #2B4865;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+
+.footer {
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footerwrap {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    padding: 40px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftfooter {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftfooter h3 {
+    font-size: 18px;
+    color: white;
+    font-family: monospace;
+
+}
+
+.inifooter {
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    /* font-size: 18px; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.inifooter h3 {
+    font-size: 17px;
+}
+
+
+.midfooter {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 30px; */
+    color: white;
+
+}
+
+.midfowrap {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.midfowrap h4 {
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.rightfooter {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: monospace;
+    /* padding: 20px; */
+    color: white;
+    gap: 5px;
+}
+
+.linebreaker {
+    width: 100%;
+    background-color: white;
+    height: 0.1vh;
+}
+
+.downfoot{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.NGN{
+    width:150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2B4865;
+    font-size: 20px;
+    font-family: monospace;
+    border-radius: 4px;
+    color: white;
+}
+
+.features{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.about{
+    width: 100%;
+    height: 70vh;
+    background-color: red;
+}
+.price{
+    width: 100%;
+    height: 70vh;
+    background-color: green;
+}
+.resources{
+    width: 100%;
+    height: 70vh;
+    background-color: greenyellow;
+}
+
+
+.detailup {
+    width: 100%;
+    height: 78vh;
+    background-color: rgba(0, 0, 0, 0.701);
+    backdrop-filter: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.detailwrap {
+    width: 80%;
+    height: 90%;
+    background-color: green;
+    display: flex;
+}
+
+.detailimage {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
+.detailimage img {
+    width: 100%;
+    height: 100%;
+}
+
+.detailtext {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* position: relative; */
+}
+.detailtext h3 {
+    font-size: 25px;
+    font-family: monospace;
+}
+.detailtext h5 {
+    font-size: 20px;
+    font-family: monospace;
+    margin-top: 50px;
+  
+}
+
+.Loginpage{
+    width: 100%;
+    height:89vh;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url(./assets/new\ image.webp) ;
+  
+    /* background: linear-gradient(
+        rgba(255,255,255,0.7),
+        rgba(255,255,255,)
+        
+    ); */
+    background-size: cover;
+    background-position: center;
+}
+
+.form{
+    background-color: white;
+    /* padding: 0px,60px; */
+    border-radius: 14px;
+    width: 480px;
+    height: 770px;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.register{
+    color: rgb(72, 1, 72);
+    text-align: center;
+    font-size: 30px;
+}
+
+.subBtn{
+  width: 75%;
+  height: 70px;
+  background-color: rebeccapurple;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 30px;
+
+}
+
